@@ -22,3 +22,9 @@ The x86 binary was compiled with Visual Studio 2013, so you'll need the [Visual 
 I wrote this when I couldn't find an existing tool to scan for wireless networks. The built-in Windows netsh.exe won't actually trigger a new scan, it can only show previously-found networks which may be stale. 
 
 Features like parsing profiles ended up in there as this also became a fun introduction to Wlan apis :)
+
+Compiling from command line:
+
+```
+cl /EHsc wlanscan.cpp pugixml.cpp Advapi32.lib
+```
